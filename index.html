@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: black;
+        color: white;
+      }
+      #screen {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        position: relative;
+      }
+      #scene {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 480px;
+        height: 1080px;
+      }
+      #canvas {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="screen">
+      <video
+        id="video"
+        width="1440"
+        height="1080"
+        controls
+        style="object-fit: cover"
+      ></video>
+      <div id="scene">
+        <canvas id="canvas" width="480" height="1080"></canvas>
+      </div>
+    </div>
+    <script type="module" src="./src/script.ts"></script>
+  </body>
+</html>

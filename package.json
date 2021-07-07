@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "typescript": "^4.3.5",
+    "vite": "^2.4.1"
+  },
+  "scripts": {
+    "start": "vite --port 7357"
+  }
+}
